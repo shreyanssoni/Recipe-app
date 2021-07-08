@@ -38,9 +38,9 @@ app.post("/form", function (req, res) {
     (serv = String(req.body.servings));
   awaiting();
   function awaiting() {
-    nameofrecipeagain = nameofrecipe.replace(/ /g, "%20");
+    //nameofrecipeagain = nameofrecipe.replace(/ /g, "%20");
     fs.writeFile(
-      `./public/${nameofrecipeagain}.html`,
+      `./public/${nameofrecipe}.html`,
       `<!DOCTYPE html>
       <html lang="en">
       <head>
@@ -91,7 +91,7 @@ function await2() {
   recipeObj.push(nameofrecipeagain);
   recipeObj.forEach(function(element) {
     app.get(`/${element}`, (req, res) => {
-      console.log( `the file has been stored` + __dirname +  `${element}.html`)
+      console.log()
       res.sendFile(path.join(__dirname, `${element}.html`));
     });
   });
