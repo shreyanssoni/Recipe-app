@@ -38,7 +38,7 @@ app.post("/form", function (req, res) {
     (serv = String(req.body.servings));
   awaiting();
   function awaiting() {
-    //nameofrecipeagain = nameofrecipe.replace(/ /g, "%20");
+    nameofrecipeagain = nameofrecipe.replace(/ /g, "");
     fs.writeFile(
       `./public/${nameofrecipe}.html`,
       `<!DOCTYPE html>
@@ -56,7 +56,12 @@ app.post("/form", function (req, res) {
       <h1 id="title">Recipes Collection</h1>
       </nav>
       
-      <div id="main-content">
+      <div id="main-content" style='background-image: linear-gradient(
+        to bottom,
+        rgba(218, 24, 24, 0.507),
+        rgba(2, 93, 179, 0.486)
+      ),
+      url("https://source.unsplash.com/1000x1000?${nameofrecipeagain}");'>
       <div id="headimage">
       <p id="headtext">${nameofrecipe}</p>
       </div>
