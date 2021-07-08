@@ -15,8 +15,7 @@ Addnew = () => {
     html += `<div class= "card">
       <a href="${String(element)}.html" target="_blank" >
       <p class="text">${element}</p>
-          <img src="https://source.unsplash.com/300x300?${splitobj.toString()}" alt="${element} Image" class="card-image">
-          
+          <img src="https://source.unsplash.com/300x300?${splitobj.toString()}" alt="${element} Image" class="card-image">    
       </a>
       <p class="text delete" id="${index}" onclick = del(this.id)>X Remove</p> 
       </div>

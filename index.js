@@ -88,7 +88,7 @@ app.post("/form", function (req, res) {
       () => {
         console.log("file was written!");
         await2();
-        res.redirect("/");
+        res.redirect("/");        
       }
     );
   }
@@ -103,4 +103,11 @@ function await2() {
   });
 }
 
-
+// app.post("/index.html", function (req, res) {
+//   deleting()
+//   function deleting() {
+//     fs.unlinkSync(`./public/${nameofrecipe}.html`)
+//     console.log("the file was deleted")
+//     res.redirect("/");
+//   }
+// })

@@ -49,7 +49,6 @@ nav {
 .insidecontainer{
   display: flex;
   flex-direction: column;
-  height: 100%;
   justify-content: center;
 }
 
@@ -113,6 +112,7 @@ a {
 }
 
 .delete {
+  border: none;
   background-color: rgba(248, 105, 105, 0.938);
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
@@ -120,6 +120,7 @@ a {
   border-top-right-radius: 0px;
   font-size: 1.1rem;
   height: 3vh;
+  cursor: pointer;
 }
 
 #empty {
@@ -297,7 +298,7 @@ textarea {
     min-height: 15vh;
   }
   .insidecontainer{
-    min-height: 30vh;
+    min-height: 57vh;
   }
 
   #form{
@@ -307,6 +308,12 @@ textarea {
   #main-content{
     margin: 3vh 8vw;
     font-size: 0.9rem;
+  }
+  #top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5vh auto;
   }
 
 }
@@ -338,11 +345,14 @@ textarea {
     width: 58vw;
   }
 
+  .insidecontainer{
+    min-height: 81vh;
+  }
+
   #empty {
     width: 58vw;
     font-size: 1.3rem;
-    min-height: 39vh;
-    margin: 12px auto;
+    margin: 2vh auto;
   }
   #form{
     min-width: 27vh;
