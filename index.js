@@ -52,7 +52,7 @@ app.post("/form", function (req, res) {
       
       </head>
       <body id="recipepage">
-      <nav id="nav-bar">
+      <nav id="nav-bar" onclick=homefunction()>
       <h1 id="title">Recipes Collection</h1>
       </nav>
       
@@ -73,6 +73,7 @@ app.post("/form", function (req, res) {
       <p>${recipeofitem}</p>
       </div>
       </div>
+      <script src="script.js"></script>
       </body>
       <footer id>
       <p id="footer-text">@This website is made by Shreyans Soni</p>

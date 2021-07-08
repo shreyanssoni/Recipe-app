@@ -15,3 +15,6 @@ myButton.addEventListener("click", (element) => {
   localStorage.setItem("myrecipes", JSON.stringify(recipeObj));
 });
 
+function homefunction(){
+  window.location ="index.html"
+}

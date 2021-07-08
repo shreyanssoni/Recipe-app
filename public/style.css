@@ -45,6 +45,13 @@ nav {
   text-shadow: 2px 2px rgb(0, 0, 0);
 }
 
+.insidecontainer{
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: center;
+}
+
 #myrecipes {
   height: 100%;
   display: grid;
@@ -145,6 +152,7 @@ a {
 
 footer {
   height: 8vh;
+  bottom: 0;
   background-color: rgb(50, 53, 41);
   display: flex;
   justify-content: flex-end;
@@ -163,7 +171,10 @@ footer {
     top: 10vh;
   }
   #intro > img {
-    height: 13rem;
+    height: 12rem;
+  }
+  #top{
+    min-height: 14.9vh;
   }
 }
 
@@ -196,7 +207,9 @@ footer {
 
   #empty {
     width: 58vw;
-    margin: 10px auto;
+    font-size: 1.3rem;
+    min-height: 39vh;
+    margin: 12px auto;
   }
 }
 
