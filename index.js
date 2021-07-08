@@ -38,7 +38,7 @@ app.post("/form", function (req, res) {
     (serv = String(req.body.servings));
   awaiting();
   function awaiting() {
-    nameofrecipeagain = nameofrecipe.replace(/ /g, "");
+    nameofrecipeagain = nameofrecipe.replace(/ /g, ",");
     fs.writeFile(
       `./public/${nameofrecipe}.html`,
       `<!DOCTYPE html>

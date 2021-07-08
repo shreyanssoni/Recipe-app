@@ -152,7 +152,7 @@ a {
 }
 
 #footer {
-  height: 10vh;
+  height: 8vh;
   background-color: rgb(50, 53, 41);
   display: flex;
   justify-content: flex-end;
