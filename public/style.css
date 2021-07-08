@@ -180,7 +180,7 @@ a {
 #main-content {
   color: white;
   padding: 20px;
-  min-height: 64.85vh;
+  min-height: 68vh;
   font-family: "Montserrat", sans-serif;
   margin: 3vh 15vw;
   font-size: 1.1rem;
@@ -301,7 +301,12 @@ textarea {
   }
 
   #form{
-    min-width: 38vh;
+    min-width: 37.5vh;
+  }
+
+  #main-content{
+    margin: 3vh 8vw;
+    font-size: 0.9rem;
   }
 
 }
@@ -340,7 +345,7 @@ textarea {
     margin: 12px auto;
   }
   #form{
-    min-width: 22vh;
+    min-width: 27vh;
   }
 }
 
