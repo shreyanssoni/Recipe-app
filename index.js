@@ -75,9 +75,9 @@ app.post("/form", function (req, res) {
       </div>
       <script src="script.js"></script>
       </body>
-      <footer id>
-      <p id="footer-text">@This website is made by Shreyans Soni</p>
-      </footer>
+      <footer id ="footer">
+    <p id="footer-text">@This website is made by Shreyans Soni</p>
+</footer>
       </html>
       `,
       () => {
