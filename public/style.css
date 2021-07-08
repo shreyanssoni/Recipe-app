@@ -25,6 +25,7 @@ nav {
 }
 
 #intro {
+  justify-content: flex-start;
   position: relative;
   color: white;
 }
@@ -33,7 +34,7 @@ nav {
   /* background-color: rgba(115, 182, 236, 0.96); */
   padding: 1vh 4vw;
   position: absolute;
-  top: 25vh;
+  top: 20vh;
   left: 3vw;
   font-size: 8rem;
   font-family: "Yellowtail", cursive;
@@ -150,9 +151,8 @@ a {
   margin: 10vh auto;
 }
 
-footer {
-  height: 8vh;
-  bottom: 0;
+#footer {
+  height: 10vh;
   background-color: rgb(50, 53, 41);
   display: flex;
   justify-content: flex-end;
@@ -168,14 +168,18 @@ footer {
 @media (max-width: 1000px) {
   #top-text {
     font-size: 12vw;
-    top: 10vh;
+    top: 8vh;
   }
   #intro > img {
-    height: 12rem;
+    height: 15rem;
   }
   #top{
-    min-height: 14.9vh;
+    min-height: 15vh;
   }
+  .insidecontainer{
+    min-height: 33vh;
+  }
+
 }
 
 @media (max-width: 400px) {
