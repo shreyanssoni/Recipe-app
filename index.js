@@ -13,6 +13,12 @@ let timereq;
 let serv;
 
 app.use(express.urlencoded({ extended: true }));
+
+const port = process.env.PORT || 3000;
+app.listen(port, () => {
+  console.log(`Example app listening at http://localhost:${port}`);
+});
+
 app.use(express.static(path.join(__dirname, "public")));
 
 app.get("/", (req, res) => {
@@ -91,7 +97,4 @@ function await2() {
   });
 }
 
-const port = process.env.PORT || 3000;
-app.listen(port, () => {
-  console.log(`Example app listening at http://localhost:${port}`);
-});
+
