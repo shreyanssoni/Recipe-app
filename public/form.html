@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Recipes|Collection by Shreyans Soni</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav id="nav-bar">
+      <h1 id="title">Recipes Collection</h1>
+    </nav>
+    <form id="form" action="/form" method="POST">
+      <p id="formhead">Enter the Details of Recipe</p>
+      <label for="timeofcooking">Time required:</label>
+      <input type="text" id="timeofcooking" name="timeofcooking" placeholder="Total time required">
+      <label for="servings">Servings:</label>
+      <input type="text" id="servings" name="servings" placeholder="Total Servings">
+      <label for="name">Name: </label>
+      <input
+        type="text"
+        id="name"
+        name="name"
+        placeholder="Enter the Name of Item"
+        required
+      />
+      <label for="ingreds">Ingredients: </label>
+      <textarea
+        type="text"
+        id="ingreds"
+        name="ingreds"
+        rows="3"
+        placeholder="Enter the Ingredients"
+      ></textarea>
+      <label for="rec">Recipe: </label>
+      <textarea
+        type="text"
+        id="rec"
+        name="rec"
+        rows="6"
+        placeholder="Enter the Recipe"
+      ></textarea>
+      <div id="buttons">
+        <input type="submit" value="SUBMIT" id="button2" class="thisbutton"/>
+      </div>
+    </form>
+  </body>
+  <script src="script.js"></script>
+  <footer id>
+    <p id="footer-text">@This website is made by Shreyans Soni</p>
+  </footer>
+</html>

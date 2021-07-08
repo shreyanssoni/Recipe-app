@@ -1,0 +1,331 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200&family=Yellowtail&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200&family=Montserrat:wght@200&family=Yellowtail&display=swap");
+
+:root {
+  --first-color: rgb(236, 122, 122);
+  --second-color: rgb(125, 190, 252);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+nav {
+  background-color: var(--first-color);
+  text-align: center;
+  height: 10vh;
+}
+
+#title {
+  font-size: 2rem;
+  padding-top: 2vh;
+  font-family: "Montserrat", sans-serif;
+}
+
+#intro {
+  position: relative;
+  color: white;
+}
+
+#top-text {
+  /* background-color: rgba(115, 182, 236, 0.96); */
+  padding: 1vh 4vw;
+  position: absolute;
+  top: 25vh;
+  left: 3vw;
+  font-size: 8rem;
+  font-family: "Yellowtail", cursive;
+  border-radius: 10px;
+  /* text-shadow: 2px 2px 2px 1.3px rgb(42, 91, 138); */
+}
+
+#top-text > p {
+  text-shadow: 2px 2px rgb(0, 0, 0);
+}
+
+#myrecipes {
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-gap: 3rem;
+  max-width: 1100px;
+  width: 100%;
+  margin: 9vh auto;
+  text-align: center;
+}
+
+.card-image {
+  width: 300px;
+  object-fit: cover;
+  /* border-top-left-radius: 5px;
+  border-top-right-radius: 5px; */
+}
+
+.card {
+  opacity: 93%;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+/* .card:hover .text{
+    transform: scale(1.02);
+    transition: 0.5s;
+    opacity: 90%;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    box-shadow: 1px 1px 2px 1px rgb(97, 152, 202) ;
+} */
+
+.card:hover {
+  transform: scale(1.1);
+  transition: 0.5s;
+  opacity: 100%;
+  border-radius: 50px;
+}
+
+.text {
+  background-color: var(--second-color);
+  width: 280px;
+  padding: 10px;
+  font-size: 1.3rem;
+  font-weight: bold;
+  height: 4vh;
+  font-weight: bold;
+  font-family: "Montserrat", sans-serif;
+  margin: -5px auto;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+}
+
+.delete {
+  background-color: rgba(248, 105, 105, 0.938);
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  font-size: 1.1rem;
+  height: 3vh;
+}
+
+#empty {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.2rem;
+}
+ 
+#button {
+  text-align: center;
+  background-color: rgb(83, 199, 83);
+  padding: 15px;
+  font-size: 1.2rem;
+  border-radius: 6px;
+  font-family: "Ubuntu", sans-serif;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#button:hover {
+  box-shadow: 1px 2px 3px 2px rgb(28, 102, 28);
+  background-color: rgb(72, 179, 72);
+  transition: 0.3s;
+}
+
+#top {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10vh auto;
+}
+
+footer {
+  height: 8vh;
+  background-color: rgb(50, 53, 41);
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  font-size: 1rem;
+  color: rgb(255, 255, 255);
+  padding: 1.3vw 2vh;
+  font-family: "Montserrat", sans-serif;
+  border-top-left-radius: 2px;
+  border-top-right-radius: 2px;
+}
+
+@media (max-width: 1000px) {
+  #top-text {
+    font-size: 12vw;
+    top: 10vh;
+  }
+  #intro > img {
+    height: 13rem;
+  }
+}
+
+@media (max-width: 400px) {
+  #navbar {
+    width: 100%;
+  }
+  #top-text {
+    display: none;
+  }
+  #intro > img {
+    display: none;
+  }
+
+  #title {
+    font-size: 1.5rem;
+  }
+
+  .card-image {
+    width: 65vw;
+  }
+
+  .container {
+    grid-template-columns: inherit;
+  }
+
+  .text {
+    width: 58vw;
+  }
+
+  #empty {
+    width: 58vw;
+    margin: 10px auto;
+  }
+}
+
+#headtext {
+  /* background-color: rgba(147, 199, 248,0.9); */
+  padding: 2px;
+  font-size: 3.5rem;
+  /* color: var(--first-color); */
+  font-family: "Yellowtail", cursive;
+  border-radius: 6px;
+  text-align: center;
+}
+
+#main-content {
+  color: white;
+  padding: 20px;
+  min-height: 64.85vh;
+  font-family: "Montserrat", sans-serif;
+  margin: 3vh 15vw;
+  font-size: 1.1rem;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(218, 24, 24, 0.507),
+      rgba(2, 93, 179, 0.486)
+    ),
+    url("https://source.unsplash.com/1000x1000?pasta");
+  border-radius: 7px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-weight: bold;
+}
+
+#cooking-time {
+  font-style: italic;
+  padding-bottom: 4px;
+  margin-top: 17px;
+}
+
+
+#insidecontent {
+  margin-top: 5px;
+  padding: 5px;
+}
+
+#ingp{
+  margin-top: 5px;
+  padding: 5px;
+}
+
+#ingredients,
+#recipe {
+  margin-top: 5px;
+  text-decoration: underline;
+}
+
+#form {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  margin: 5vh auto;
+  width: 40vw;
+  padding: 2rem;
+  background-image: linear-gradient(to bottom right, rgb(16, 127, 231),rgb(72, 162, 247), rgb(142, 199, 253));
+  max-height: 100%;
+  border-radius: 10px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+#formhead{
+  padding: 7px;
+  margin-bottom: 10px;
+  color: white;
+  text-transform: uppercase;
+  /* border: solid 6px white; */
+  text-align:center; 
+  font-size: 1.3rem; 
+  font-weight: bolder;
+}
+
+#form input,
+textarea {
+  padding: 15px;
+  border: none;
+  border-radius: 3px;
+  margin: 2.5vh 0.1vw;
+  font-family: "Montserrat", sans-serif;
+  resize: none;
+  font-size: 15px;
+}
+
+#button2{
+  width: 300px;
+  text-align: center;
+  background-color: var(--first-color);
+  padding: 15px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  font-family: "Ubuntu", sans-serif;
+  cursor: pointer;
+  border-radius: 6px !important;
+}
+
+#buttons{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+#button2:hover {
+  box-shadow: 0.5px 1px 3px rgb(133, 52, 52);
+  background-color: rgb(235, 111, 111);
+  transition: 0.3s;
+}
+
+::-webkit-scrollbar-track {
+  /* -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); */
+  border-radius: 10px;
+  background-color: #f5f5f5;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+  background-color: #f5f5f5;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  /* -webkit-box-shadow: inset 0 0 6px rgba(49, 49, 49, 0.3); */
+  background-color: rgb(134, 134, 134);
+}
