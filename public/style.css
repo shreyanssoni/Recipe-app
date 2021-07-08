@@ -170,14 +170,19 @@ a {
     font-size: 12vw;
     top: 8vh;
   }
+  #title {
+    font-size: 2rem;
+    padding-top: 2.5vh;
+    font-family: "Montserrat", sans-serif;
+  }
   #intro > img {
-    height: 15rem;
+    height: 12rem;
   }
   #top{
     min-height: 15vh;
   }
   .insidecontainer{
-    min-height: 33vh;
+    min-height: 30vh;
   }
 
 }
